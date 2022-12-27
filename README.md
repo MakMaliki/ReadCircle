@@ -1,8 +1,6 @@
 # ReadCircle
 
-<p align="center">
-  <img src="https://www.flaticon.com/free-icon/library_7251570" width="350" title="Reading Circle">
-</p>
+![ReadCircle](./readingcircle.png)
 
 
 Reading Circle 
