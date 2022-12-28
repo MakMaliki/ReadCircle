@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "296894218276",
+    "project_id": "readcircle-444c4",
+    "storage_bucket": "readcircle-444c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:296894218276:android:94ac911d507eb82cd398b1",
+        "android_client_info": {
+          "package_name": "com.malik.readcircle"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "296894218276-bk6dd84resffdlgtg335si8fpaps4fq7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPDYi6YTNWiPHlVBUl2z-t5z3CQm3xCe0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "296894218276-bk6dd84resffdlgtg335si8fpaps4fq7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
