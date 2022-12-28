@@ -48,7 +48,6 @@ fun UserForm(){
     val keyboardController = LocalSoftwareKeyboardController.current
     val valid = remember(email.value,password.value){
         email.value.trim().isNotEmpty() && password.value.trim().isNotEmpty() }
-
     val modifier = Modifier
         .height(250.dp)
         .background(MaterialTheme.colors.background)
