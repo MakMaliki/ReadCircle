@@ -1,6 +1,7 @@
 package com.malik.readcircle.navigation
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -9,6 +10,7 @@ import com.malik.readcircle.screens.home.ReaderHomeScreen
 import com.malik.readcircle.screens.login.LoginScreen
 import com.malik.readcircle.screens.search.BookSearchScreen
 
+@OptIn(ExperimentalComposeUiApi::class)
 @Composable
 fun ReaderNavigation(){
     val navController = rememberNavController()

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ReadCircle</string>
+    <string name="create_Account">Please Enter a valid email and password/ Minimum 6 charachter</string>
 </resources>
