@@ -21,6 +21,7 @@ import androidx.compose.ui.draw.scale
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
+import com.google.firebase.auth.FirebaseAuth
 import com.malik.readcircle.components.ReaderLogo
 import com.malik.readcircle.navigation.ReaderScreens
 import kotlinx.coroutines.delay
@@ -43,7 +44,14 @@ fun ReaderSplashScreen(navController: NavController) {
 
         delay(2000L)
 
-        navController.navigate(ReaderScreens.LoginScreen.name)
+//        if (FirebaseAuth.getInstance().currentUser?.email.isNullOrEmpty()){
+//            navController.navigate(ReaderScreens.LoginScreen.name)
+//
+//        }else{
+//            navController.navigate(ReaderScreens.ReaderHomeScreen.name)
+//        }
+                   navController.navigate(ReaderScreens.LoginScreen.name)
+
     }
 
 

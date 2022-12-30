@@ -37,11 +37,13 @@ import com.malik.readcircle.R
 import com.malik.readcircle.components.EmailInput
 import com.malik.readcircle.components.PasswordInput
 import com.malik.readcircle.components.ReaderLogo
+import com.malik.readcircle.navigation.ReaderScreens
+import com.malik.readcircle.screens.home.ReaderHomeScreen
 
 @ExperimentalComposeUiApi
 
 @Composable
-fun LoginScreen(navController: NavController) {
+fun LoginScreen(navController: NavController,viewModel: LoginScreenViewModel= androidx.lifecycle.viewmodel.compose.viewModel()) {
 
     val showLoginForm = rememberSaveable {
         mutableStateOf(true)
@@ -59,7 +61,15 @@ fun LoginScreen(navController: NavController) {
                 isCreateAccount = false
             ) { email, password ->
 
+                viewModel.signInWithEmailAndPassword(email,password){
+                    navController.navigate(ReaderScreens.ReaderHomeScreen.name)
+                }
+
             } else UserForm(loading = false, isCreateAccount = true) { email, password ->
+
+                viewModel.createUserWithEmailAndPassword(email,password){
+                    navController.navigate(ReaderScreens.ReaderHomeScreen.name)
+                }
             }
         }
         Spacer(modifier = Modifier.height(16.dp))
