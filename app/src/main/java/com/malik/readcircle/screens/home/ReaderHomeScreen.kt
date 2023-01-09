@@ -85,6 +85,7 @@ fun ReadAppBar(title:String,showProfile:Boolean=true,navController: NavControlle
                     
                     Spacer(modifier = Modifier.width(150.dp))
 
+                    Icon(imageVector = Icons.Filled.Close, contentDescription = "Log out" )
 
                 }
         },
