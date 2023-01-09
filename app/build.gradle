@@ -72,10 +72,17 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:2.44"
 
 
-// Dagger - Hilt
+   // Dagger - Hilt
     kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
     kapt "androidx.hilt:hilt-compiler:1.0.0"
     implementation "androidx.hilt:hilt-navigation-compose:1.0.0"
+
+
+    //Material Icon library
+    //This will add 18 Mb Extra size in app
+    // and also build time will be longer
+
+    implementation "androidx.compose.material:material-icons-extended:$compose_ui_version"
 
 
     //Coroutines
