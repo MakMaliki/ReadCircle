@@ -1,5 +1,4 @@
 package com.malik.readcircle.di
-
 import dagger.Module
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
